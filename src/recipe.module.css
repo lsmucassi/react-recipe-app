@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand;
+}
+
+.card {
+  width: 33%;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 2px 3px 7px 5px #dedede;
+  border-radius: 7px;
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card .cardinfo {
+  padding: 20px;
+  position: relative;
+}
+.card .cardinfo .roundedbtn {
+  background-color: #E91E63;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-top: 8px;
+  position: absolute;
+  right: 20px;
+  top: -25px;
+  z-index: 5;
+}
+.card .cardinfo .roundedbtn span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5px auto;
+}
+.card .cardinfo h3 {
+  margin-bottom: 20px;
+}
+.card .cardinfo p {
+  margin-bottom: 20px;
+}
+.card .cardinfo p::after {
+  content: "...";
+}
