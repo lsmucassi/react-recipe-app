@@ -53,7 +53,11 @@ const App = () => {
               ingredients={recipe.recipe.ingredients} />
         ))}
       </div>
+      {/* <div className="footer">
+        check out my profile at lmucassi.herokuapp.com
+      </div> */}
     </div>
+    
   );
 }
 
